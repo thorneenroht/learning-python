@@ -1,3 +1,10 @@
+def diff21(n):
+	if n > 21:
+		sum = n - 21
+		return sum * 2
+	else:
+		return 21 - n
+
 
 def sum_double(a, b):
 	if a == b:
@@ -33,3 +40,8 @@ print(monkey_trouble(True,False))
 print(sum_double(1,2))
 print(sum_double(3,2))
 print(sum_double(2,2))
+
+
+print(diff21(10))
+print(diff21(21))
+print(diff21(25))
