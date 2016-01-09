@@ -28,6 +28,16 @@ def sleepIn(weekday, vacation):
 	elif weekday == False and vacation == True:
 		return True
 
+def parrot_trouble(b, time):
+	if (time < 7 or time > 20) and b == True:
+		return True
+	else:
+		return False
+
+print(parrot_trouble(True, 6))
+print(parrot_trouble(True, 7))
+print(parrot_trouble(False, 6))
+
 print(sleepIn(False, True))
 print(sleepIn(True, False))
 print(sleepIn(False, False))
